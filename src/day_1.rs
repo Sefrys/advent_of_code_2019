@@ -1,11 +1,11 @@
-use crate::read_file;
+use crate::reader::read;
 
 fn calculate_fuel_req(x: u32) -> u32 {
     (x / 3) as u32 - 2
 }
 
 pub fn calculate_sum_of_fuel_req(filename: &str) -> u32 {
-   read_file(filename).lines().map(|x| calculate_fuel_req(x.parse::<u32>().unwrap())).sum()
+   read(filename).lines().map(|x| calculate_fuel_req(x.parse::<u32>().unwrap())).sum()
 }
 
 
