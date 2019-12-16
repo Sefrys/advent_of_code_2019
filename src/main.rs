@@ -1,4 +1,4 @@
-mod day_1;
+use advent_of_code_2019::day_1;
 
 fn main() {
     let day_1_answer = day_1::calculate_sum_of_fuel_req("inputs/day_1.txt");

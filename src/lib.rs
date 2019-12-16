@@ -4,7 +4,7 @@ pub mod day_1;
 pub mod reader {
     use std::fs;
 
-    pub fn read(filename: &str) -> String {
+    pub fn read_file(filename: &str) -> String {
         fs::read_to_string(filename).unwrap()
     }
 }
