@@ -1,4 +1,4 @@
-pub mod day_1_1 {
+pub mod d1p1 {
     use crate::reader::read_file;
 
     pub fn calculate_fuel_req(x: u32) -> u32 {
@@ -10,7 +10,7 @@ pub mod day_1_1 {
     }
 }
 
-pub mod day_1_2 {
+pub mod d1p2 {
     use crate::reader::read_file;
     // 1. Get module mass
     // 2. Get fuel req for module mass
@@ -67,18 +67,18 @@ pub mod day_1_2 {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use day_1_2;
-    use crate::day_1::day_1_2::ShipModule;
+    use d1p2;
+    use crate::day_1::d1p2::ShipModule;
 
     #[test]
     fn test_fuel_req() {
-        assert_eq!(654, day_1_1::calculate_fuel_req(1969));
-        assert_eq!(33583, day_1_1::calculate_fuel_req(100756))
+        assert_eq!(654, d1p1::calculate_fuel_req(1969));
+        assert_eq!(33583, d1p1::calculate_fuel_req(100756))
     }
 
     #[test]
     fn test_sum_fuel_req() {
-        assert_eq!(34237, day_1_1::calculate_sum_of_fuel_req("inputs/day_1_test.txt"));
+        assert_eq!(34237, d1p1::calculate_sum_of_fuel_req("inputs/day_1_test.txt"));
     }
 
     #[test]

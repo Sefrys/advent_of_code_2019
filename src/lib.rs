@@ -1,4 +1,5 @@
 pub mod day_1;
+pub mod day_2;
 
 
 pub mod reader {
@@ -7,6 +8,7 @@ pub mod reader {
     pub fn read_file(filename: &str) -> String {
         fs::read_to_string(filename).unwrap()
     }
+
 }
 
 #[cfg(test)]
